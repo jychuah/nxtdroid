@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/thread_list_title"
+        android:textSize="16dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/thread_list_title"
+        android:layout_alignParentTop="true"></TextView>
+    <fragment
+        android:id="@+id/nxtthread_list"
+        android:name="org.kealinghornets.nxtdroid.app.ThreadListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thread_list_title"
+        tools:layout="@android:layout/list_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dip">
+        <Button
+            android:id="@+id/button_joypad_control"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="joypadClick"
+            android:hint="Joypad Control"
+            android:textColor="#0000"
+            android:enabled="false"
+            />
+        <Button
+            android:id="@+id/button_send_queue"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="sendQueueClick"
+            android:hint="@string/send_queue_button_text"
+            android:textColor="#0000"
+            android:enabled="false"
+            />
+        <Button
+            android:id="@+id/button_bluetooth_menu"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="bluetoothMenuClick"
+            android:hint="@string/action_bluetooth_menu"
+            android:textColor="#0000"
+            />
+        <Button
+            android:id="@+id/button_bluetooth_devices"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="bluetoothDevicesClick"
+            android:hint="@string/action_bluetooth_devices"
+            android:textColor="#0000"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

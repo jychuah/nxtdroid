@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NXT Droid</string>
+    <string name="title_nxtthread_detail">Thread Detail</string>
+    <string name="menu_item_connection">Connection</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_bluetooth_menu">Bluetooth Settings</string>
+    <string name="action_bluetooth_devices">Select NXT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_connection">ConnectionActivity</string>
+    <string name="pref_bt_menu"></string>
+    <string name="title_pref_menu">Bluetooth System Menu</string>
+    <string name="pref_bt">Bluetooth Settings</string>
+    <string-array name="pref_available_nxt"></string-array>
+    <string-array name="pref_available_nxt_names"></string-array>
+    <string name="pref_select_nxt">Select NXT</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="connect_failure">Could not connect to </string>
+    <string name="disconnect_error">NXT Disconnected</string>
+    <string name="already_connected">Already connected to </string>
+    <string name="connect_succeed">Connected to </string>
+    <string name="thread_list_title">NXT Threads</string>
+    <string name="send_queue_button_text">View send queue</string>
+    <string name="cant_find_nxt_by_address">Can\'t find NXT with address</string>
+
+</resources>

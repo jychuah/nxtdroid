@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle" 
+    android:id="@+id/drawable_log_background">
+   <solid android:color="#ffffff" />
+   <stroke android:width="2dip" android:color="#333333"/>
+</shape>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    <!--
+    <RelativeLayout
+        android:id="@+id/thread_control"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip">
+    <TextView
+        android:id="@+id/thread_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"/>
+    
+	    <LinearLayout android:id="@+id/thumbnail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="3dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="5dip">
+	 
+	        <ImageView
+	            android:id="@+id/thread_detail_state_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@android:drawable/ic_menu_rotate"
+	            />
+	 
+	    </LinearLayout>
+    </RelativeLayout>
+    -->
+    <include layout="@layout/list_row" />
+    <LinearLayout 
+        android:id="@+id/thread_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dip">
+	    <ScrollView 
+	        android:id="@+id/thread_log_scroller"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:scrollbars="vertical"
+	        android:background="@drawable/log_border">
+	        <TextView
+	            android:id="@+id/thread_log"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:textSize="12sp"
+	            android:padding="10dip"
+	            android:singleLine="false"/>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
